@@ -7,7 +7,7 @@ board = [" ", " "," "," "," "," "," "," "," "]
 display_board(board)
 
 
-turn
+turn(board)
 
 
 
