@@ -20,14 +20,16 @@ end
 
 
 def position_taken?(board, location)
-  if board[location] = " " || ""
+  if board[location] == " " || board[location] == ""
     return TRUE
   else
+    puts "That spot is taken"
+    return FALSE
+  end
 end
 
 def valid_move?(board, index)
-  return index.between(0,8) && position_taken
-  return TRUE
+  return index.between(0,8) && position_taken(board, index)
 end
 
 def turn(board)
