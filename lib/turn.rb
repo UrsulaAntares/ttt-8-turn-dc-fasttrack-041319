@@ -19,10 +19,22 @@ def move(board, indexa, current_player = "X")
 end
 
 
+def position_taken?(board, location)
+  if board[location] = " " || ""
+    return TRUE
+  else
+end
+
+def valid_move?(board, index)
+  return index.between(0,8) && position_taken
+  return TRUE
+end
+
 def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.strip
   index = input_to_index(user_input)
+  if valid_move
   move(board, index)
   display_board(board)
 end
